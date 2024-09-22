@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Playlists</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="library.html">Your Library</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="now-playing.html">Now Playing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="playlist-section">
+            <h1>Playlists</h1>
+            <div id="playlists-container">
+                <div class="playlist-card" data-playlist="1">
+                    <img src="images/playlist1.jpg" alt="Playlist 1">
+                    <p>Top Hits</p>
+                    <button class="save-btn" data-playlist="1">Save Playlist</button>
+                </div>
+                <div class="playlist-card" data-playlist="2">
+                    <img src="images/playlist2.jpg" alt="Playlist 2">
+                    <p>Chill Vibes</p>
+                    <button class="save-btn" data-playlist="2">Save Playlist</button>
+                </div>
+                <div class="playlist-card" data-playlist="3">
+                    <img src="images/playlist3.jpg" alt="Playlist 3">
+                    <p>Workout Mix</p>
+                    <button class="save-btn" data-playlist="3">Save Playlist</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="songs-section" style="display: none;">
+            <h2>Playlist Songs</h2>
+            <ul id="song-list"></ul>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
